@@ -17,8 +17,10 @@ I doubt that using a kernel module will allow to hook relevant events at the cac
 
 As I haven't yet researched thoroughly, there will be many flaws to fix.
 
-Now, the dumb/trivial method will be to use the inotify facility to monitor access to relevant files
+Now, the dumb/trivial method will be to use the `inotify` facility to monitor access to relevant files
 and then query and update their cache state.
+
+It seems that `fanotify` replaces `inotify`, but it doesn't seem to track file deletion and renames.
 
 
 Status & Limitations
