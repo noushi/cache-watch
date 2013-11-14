@@ -3,3 +3,11 @@
 require 'thor'
 require 'cache-watch'
 
+module CacheWatcher
+  class CWCli < Thor
+    desc "!FIX ME:", "please fill me"
+    def watch(*dirs) 
+    end
+  end
+  
+end
